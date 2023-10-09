@@ -1,0 +1,48 @@
+/* https://maketintsandshades.com/#e6ecee,c6d4d8,aac2ce,d2b08c,a38672 */
+
+:root {
+    --light-blue: #e6ecee;
+    --medium-blue: #c6d4d8;
+    --dark-blue: #aac2ce;
+    --light-brown: #d2b08c;
+    --dark-brown: #a38672;
+    --text-color: #222729;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+body {
+    background-image: url("Home-bg.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.home {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1.welcome-header {
+    font-size: 70px;
+    letter-spacing: 2px;
+    color: var(--text-color);
+}
+
+p.welcome-text {
+    font-size: 40px;
+}
+
+
+
