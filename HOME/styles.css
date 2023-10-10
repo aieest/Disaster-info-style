@@ -1,12 +1,8 @@
-/* https://maketintsandshades.com/#e6ecee,c6d4d8,aac2ce,d2b08c,a38672 */
+/* https://psfiles.com/free-gradient-color-palettes-photoshop/ */
 
 :root {
-    --light-blue: #e6ecee;
-    --medium-blue: #c6d4d8;
-    --dark-blue: #aac2ce;
-    --light-brown: #d2b08c;
-    --dark-brown: #a38672;
-    --text-color: #222729;
+    --bg-color: rgb(0, 0, 52);
+    --gradient-one: linear-gradient(#ffcb52, #ff7b02);
 }
 
 * {
@@ -17,7 +13,7 @@
 }
 
 body {
-    background-image: url("Home-bg.png");
+    background:  var(--bg-color);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -37,7 +33,16 @@ body {
 h1.welcome-header {
     font-size: 70px;
     letter-spacing: 2px;
-    color: var(--text-color);
+    position: relative; /* Add this to create a stacking context */
+}
+
+h1.welcome-header {
+    font-size: 70px;
+    letter-spacing: 2px;
+    background-image: var(--gradient-one);
+    -webkit-background-clip: text; /* For WebKit/Blink browsers */
+    background-clip: text;
+    color: transparent;
 }
 
 p.welcome-text {
