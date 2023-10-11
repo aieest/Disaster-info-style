@@ -1,0 +1,86 @@
+:root {
+    --bg-color: rgb(0, 0, 52);
+    --gradient-one: linear-gradient(#ffcb52, #ff7b02);
+    --gradient-two: linear-gradient(135deg, #5581f1 55%, #b588f7);
+    --gradient-three: linear-gradient(#1153fc 40%, #5581f1 );
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid white;
+}
+
+body {
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.post-form-header {
+    color: white;
+}
+
+.post-form {
+    width: 50vh;
+    background: var(--gradient-two);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 30px rgba(181, 136, 247, 0.35);
+    text-align: center;
+}
+
+.post-form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--bg-color);
+}
+
+.post-form-text {
+    padding: 0;
+    text-align: center;
+}
+
+.post-form-title-input {
+    width: 90%;
+    padding: 8px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--bg-color);
+    color: white;
+}
+
+.post-form-content-input {
+    width: 90%;
+    padding: 8px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--bg-color);
+    color: white;
+}
+
+input[type="checkbox"].post-categories {
+    border: none;
+    background-color: var(--bg-color);
+}
+
+.new-post-submit {
+    background: var(--bg-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.new-post-submit:hover {
+    background: #333;
+}

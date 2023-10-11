@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Your CSS styles go here -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/36b55f0412.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <content class="post-form">
+
+        <h1 class="post-form-header">Edit Post id: 1</h1>
+
+        <section class="post-form-content">
+
+            <ul>
+                <li><%= error.full_message %></li>
+            </ul>
+
+            <div class="post-form-text">
+                <input type="text" name="title" placeholder="Title" class="post-form-title-input"></input>
+                <textarea name="content" placeholder="Content" class="post-form-content-input"></textarea>
+            </div>
+            <div class="post-categories-container">
+                <input type="checkbox" name="post-categories" class="post-categories">
+                <input type="checkbox" name="post-categories" class="post-categories">
+                <input type="checkbox" name="post-categories" class="post-categories">
+            </div>
+            <div>
+                <input type="file" name="image">
+            </div>
+            <button type="submit" class="new-post-submit">Submit</button>
+        </section>
+
+    </content>
+
+</body>
+</html>
