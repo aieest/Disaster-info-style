@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Your CSS styles go here -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <content class="comment-container">
+        <h1 class="comment-header">COMMENT</h1>
+        <section class="comment-input-container">
+            <form action="" method="post">
+                    <ul class="comment-errors">
+                            <li>error.full_message</li>
+                    </ul>
+                <div class="comment-form">
+                    <input type="text" id="comment_content" name="comment[content]" class="comment-input" placeholder="Type it here">
+                    <input type="submit" value="Submit" class="comment-submit">
+                </div>
+            </form>
+        </section>
+    
+
+    </content>
+
+
+</body>
+</html>
+
+
+<!--RESTRUCTURED HTML.ERB-->
+<!--
+
+<%= form_with model: comment, url: path, data: { turbo: false } do |form| %>
+  <% if comment.errors.any? %>
+    <ul class="comment-errors">
+      <% comment.errors.each do |error| %>
+        <li><%= error.full_message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <div class="comment-form">
+    <%= form.label :content, class: "comment-label" %>
+    <%= form.text_field :content, class: "comment-input" %>
+    <%= form.submit "Submit", class: "comment-submit" %>
+  </div>
+<% end %>
+
+
+-->
